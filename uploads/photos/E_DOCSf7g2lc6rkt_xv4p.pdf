@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+<title>Platform PDF Viewer | ILIDE.INFO</title>
+<meta name="description" content="Work with PDF Documents on the Go Integrate API as viewer for PDFs files extendtion from PDF JS">
+<link rel="canonical" href="https://ilide.info/" />
+<meta property="og:url" content="https://ilide.info/" />
+<meta property="og:title" content="Platform PDF Viewer | ILIDE.INFO" />
+<meta property="og:description" content="Work with PDF Documents on the Go Integrate API as viewer for PDFs files extendtion from PDF JS" />
+<meta property="og:image" content="https://ilide.info/themes/ilide/assets/img/ilide_logo.png" />
+<meta property="og:site_name" content="ilide.info" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="website" />
+<meta name="twitter:site" content="@ilide.info" />
+<meta name="twitter:title" content="Platform PDF Viewer | ILIDE.INFO" />
+<meta name="twitter:description" content="Work with PDF Documents on the Go Integrate API as viewer for PDFs files extendtion from PDF JS" />
+<meta name="twitter:image" content="https://ilide.info/themes/ilide/assets/img/ilide_logo.png" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="application-name" content="ilide.info" />
+<meta name="apple-mobile-web-app-status-bar-style" content="white" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="msapplication-TileColor" content="#FFF" />
+<meta name="theme-color" content="#FFF" />
+<link rel="apple-touch-icon" sizes="57x57" href="https://ilide.info/themes/ilide/assets/img/apple-icon-57x57.png" />
+<link rel="apple-touch-icon" sizes="60x60" href="https://ilide.info/themes/ilide/assets/img/apple-icon-60x60.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="https://ilide.info/themes/ilide/assets/img/apple-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="https://ilide.info/themes/ilide/assets/img/apple-icon-114x114.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="https://ilide.info/themes/ilide/assets/img/apple-icon-76x76.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="https://ilide.info/themes/ilide/assets/img/apple-icon-120x120.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="https://ilide.info/themes/ilide/assets/img/apple-icon-152x152.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="https://ilide.info/themes/ilide/assets/img/apple-icon-180x180.png" />
+<link rel="icon" type="image/png" href="https://ilide.info/themes/ilide/assets/img/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="https://ilide.info/themes/ilide/assets/img/android-icon-36x36.png" sizes="36x36" />
+<link rel="icon" type="image/png" href="https://ilide.info/themes/ilide/assets/img/android-icon-48x48.png" sizes="48x48" />
+<link rel="icon" type="image/png" href="https://ilide.info/themes/ilide/assets/img/android-icon-72x72.png" sizes="72x72" />
+<link rel="icon" type="image/png" href="https://ilide.info/themes/ilide/assets/img/android-icon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="https://ilide.info/themes/ilide/assets/img/android-icon-144x144.png" sizes="144x144" />
+<link rel="icon" type="image/png" href="https://ilide.info/themes/ilide/assets/img/android-icon-192x192.png" sizes="192x192" />
+<link rel="icon" type="image/png" href="https://ilide.info/themes/ilide/assets/img/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="https://ilide.info/themes/ilide/assets/img/favicon-16x16.png" sizes="16x16" />
+<meta name="msapplication-TileImage" content="https://ilide.info/themes/ilide/assets/img/ms-icon-144x144.png" />
+<meta name="msapplication-square70x70logo" content="https://ilide.info/themes/ilide/assets/img/ms-icon-70x70.png" />
+<meta name="msapplication-square150x150logo" content="https://ilide.info/themes/ilide/assets/img/ms-icon-150x150.png" />
+<meta name="msapplication-wide310x150logo" content="https://ilide.info/themes/ilide/assets/img/ms-icon-310x150.png" />
+<meta name="msapplication-square310x310logo" content="https://ilide.info/themes/ilide/assets/img/ms-icon-310x310.png" />
+<link href="https://ilide.info/themes/ilide/assets/img/apple-startup-320x460.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image" />
+<link href="https://ilide.info/themes/ilide/assets/img/apple-startup-640x920.png" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+<link href="https://ilide.info/themes/ilide/assets/img/apple-startup-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+<link href="https://ilide.info/themes/ilide/assets/img/apple-startup-748x1024.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 1) and (orientation: landscape)" rel="apple-touch-startup-image" />
+<link href="https://ilide.info/themes/ilide/assets/img/apple-startup-750x1024.png" media rel="apple-touch-startup-image" />
+<link href="https://ilide.info/themes/ilide/assets/img/apple-startup-750x1294.png" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image" />
+<link href="https://ilide.info/themes/ilide/assets/img/apple-startup-768x1004.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 1) and (orientation: portrait)" rel="apple-touch-startup-image" />
+<link href="https://ilide.info/themes/ilide/assets/img/apple-startup-1182x2208.png" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" rel="apple-touch-startup-image" />
+<link href="https://ilide.info/themes/ilide/assets/img/apple-startup-1242x2148.png" media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" rel="apple-touch-startup-image" />
+<link href="https://ilide.info/themes/ilide/assets/img/apple-startup-1496x2048.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" rel="apple-touch-startup-image" />
+<link href="https://ilide.info/themes/ilide/assets/img/apple-startup-1536x2008.png" media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" rel="apple-touch-startup-image" />
+<link href="https://ilide.info/themes/ilide/assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="https://ilide.info/themes/ilide/assets/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="https://ilide.info/themes/ilide/assets/main.css?v=3.2" rel="stylesheet" type="text/css">
+<script src="https://ilide.info/themes/ilide/assets/popper.min.js"></script>
+<script src="https://ilide.info/themes/ilide/assets/jquery-3.2.1.min.js"></script>
+<script src="https://ilide.info/themes/ilide/assets/bootstrap.min.js"></script>
+<script data-ad-client="ca-pub-9378214440816980" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+<body>
+<header id="header" class="container-fluid text-center bg-dark">
+<a class="navbar-brand" href="https://ilide.info/">
+<img src="https://ilide.info/themes/ilide/assets/img/ilide_logo.png" height="32" />
+</a>
+</header>
+<nav class="navbar navbar-expand-lg navbar-light py-0">
+<button class="navbar-toggler border-0 m-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<i class="fa fa-bars" aria-hidden="true"></i>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav m-auto">
+<li class="nav-item">
+<a class="nav-link btn btn-link" href="https://ilide.info/">HOME</a>
+</li>
+<li class="nav-item">
+<a class="nav-link btn btn-link" href="https://ilide.info/privacy-policy">PRIVACY POLICY</a>
+</li>
+<li class="nav-item">
+<a class="nav-link btn btn-link" href="https://ilide.info/terms-of-service">TERMS OF SERVICES</a>
+</li>
+<li class="nav-item">
+<a class="nav-link btn btn-link" href="https://ilide.info/faqs">FAQs</a>
+</li>
+<li class="nav-item">
+<a class="nav-link btn btn-link" href="https://ilide.info/contact-us">CONTACT US</a>
+</li>
+<li class="nav-item">
+<div class="dropdown">
+<a class="nav-link btn btn-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">DEVELOPERS</a>
+<ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuLink">
+<li class="dropdown-item">
+<a class="d-block" href="https://ilide.info/developmers-get-started">Get Started</a>
+</li>
+<li class="dropdown-item">
+<a class="d-block" href="https://ilide.info/developmers-api-documentation">API Documentation</a>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</nav>
+<div class="container-fluid">
+<div class="alert alert-danger my-2">
+Access denied! Request page is not found or has been removed. </div>
+</div>
+<div class="container">
+<div class="row">
+<div class="col-12">
+<h1 class="display-4">Platform PDF Viewer iLIDE INFO</h1>
+<h4 class="display-5">Work with PDF Documents on the Go Integrate API as viewer for PDFs files extendtion from PDF JS</h4>
+<p>With iLIDE PDF Viewer for iPad, iPhone, Mac, and Android, you get annotations, forms, signatures, document editing and sharing, all in one free package.</p>
+</div>
+<div class="col-12">
+<h4>All the Features of iLIDE PDF Viewer</h4>
+<div class="row">
+<div class="col-md-4">
+<img src="https://ilide.info/themes/ilide/assets/img/annotations-777f9468.svg" alt="Annotations" width="200" class="mb-4">
+<h5 class="display-5">Annotations</h5>
+<p> Annotate your PDF documents easily by highlighting text, adding notes, freehand ink drawing, adding images, and more. </p>
+</div>
+<div class="col-md-4">
+<img src="https://ilide.info/themes/ilide/assets/img/document-editor-b55363a3.svg" alt="Document Editor" width="200" class="mb-4">
+<h5 class="display-5">Document Editor</h5>
+<p> Add new pages, duplicate, rotate, or delete them, or even create a new document by selecting pages from another document. </p>
+</div>
+<div class="col-md-4">
+<img src="https://ilide.info/themes/ilide/assets/img/signatures-0b9a382d.svg" alt="Signatures" width="200" class="mb-4">
+<h5 class="display-5">Signatures</h5>
+<p> Sign documents and forms anywhere using your finger or stylus, then flatten and save the document to prevent changes. </p>
+</div>
+</div>
+<hr/>
+</div>
+<div class="col-12">
+<h4>Read, Review, and Annotate</h4>
+<p>Whether you're working alone or collaborating with a team, iLIDE PDF Viewer maximizes productivity, allowing you to easily read, review, annotate, and search PDFs.</p>
+<hr/>
+</div>
+<div class="col-12">
+<h4>Review, Annotate, and Share</h4>
+<p>Annotating your PDF documents by highlighting text, adding notes, freehand ink drawings, images and more is simple and easy with iLIDE PDF Viewer. When you've finished, easily share or print those documents too.</p>
+<ul>
+<li>Highlight text, ink drawing, adding images and notes, are just some of the many annotations types available.</li>
+<li>Using the annotation inspector, you can quickly adjust the style of your annotations to fit your needs.</li>
+<li>A list of all the annotations made makes it easy to see which parts of the document are being worked on or needs reviewing.</li>
+<li>Split-view on iPad allows you to easily review your PDF while working in other apps.</li>
+</ul>
+<hr/>
+</div>
+<div class="col-12">
+<h4>Move, Add, Delete, Rotate, and Save</h4>
+<p>The Document Editor allows you to easily add new pages, duplicate existing ones, rotate them, delete unnecessary ones or even create a new document from a selection of pages out of another document.</p>
+<hr/>
+</div>
+<div class="col-12">
+<h4>Sign Documents Anywhere</h4>
+<p>With iLIDE PDF Viewer you can sign documents and forms anywhere, using your finger or stylus, such as the Apple Pencil. Resize and move your signature as needed on the document. When finished, flatten and save the document to prevent any changes.</p>
+<hr/>
+</div>
+<div class="col-12">
+<h4>And There's Much More</h4>
+<div class="row">
+<div class="col-md-4">
+<img src="https://ilide.info/themes/ilide/assets/img/advanced-settings-7a09cabe.svg" alt="Advanced Settings" width="200" class="mb-4">
+<h5 class="display-5">Advanced Settings</h5>
+<p> Take full control with settings for view modes, the thumbnail bar, search results, and more. </p>
+</div>
+<div class="col-md-4">
+<img src="https://ilide.info/themes/ilide/assets/img/copy-and-paste-pages-ad78606d.svg" alt="Copy and Paste Pages" width="200" class="mb-4">
+<h5 class="display-5"> Copy and Paste Pages <span class="badge badge-light ml-1">iOS</span></h5>
+<p> Easily copy pages to a different location in the document, or even between documents. </p>
+</div>
+<div class="col-md-4">
+<img src="https://ilide.info/themes/ilide/assets/img/freeform-rotation-a1407427.svg" alt="Signatures" width="200" class="mb-4">
+<h5 class="display-5">Freeform Rotation Android</h5>
+<p> Annotate plans, maps, and rotated pages with 360° freeform rotation for annotations. </p>
+</div>
+</div>
+<hr/>
+</div>
+<div class="col-12 col-md-6">
+<h4>iPad and iPhone Features</h4>
+<ul>
+<li>Apple Pencil support<br/><span class="small text-muted"> (240 Hz resolution) </span></li>
+<li>iPhone 7 Taptic Engine support</li>
+<li>Adaptive layout for iPad multitasking </li>
+<li>Optimized for the iPad Pro </li>
+<li>Sync document states via iCloud </li>
+<li>iCloud Drive documents import and export </li>
+<li>Quick Actions<br> <span class="small text-muted"> (3D Touch) </span></li>
+<li>Messages Sticker Pack</li>
+</ul>
+</div>
+<div class="col-12 col-md-6">
+<h4>Android Features</h4>
+<ul>
+<li>Document centric task management </li>
+<li>Dynamic app shortcuts (Android 7.1) </li>
+<li>Multi-window support </li>
+<li>Chromebook support </li>
+<li>Opens PDF files from virtually any third-party app </li>
+<li>Supports all Android devices back to KitKat (version 4.4) </li>
+</ul>
+</div>
+</div>
+</div>
+<footer class="container-fluid mb-3">
+<div class="row">
+<div class="col-12 text-center">
+<hr/>
+<p>Copyright © 2024 ilide.info All rights reserved.</p>
+<p><a href="/cdn-cgi/l/email-protection#41282f272e01282d2825246f282f272e"><span class="__cf_email__" data-cfemail="80e9eee6efc0e9ece9e4e5aee9eee6ef">[email&#160;protected]</span></a></p>
+</div>
+</div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-176264227-1"></script>
+<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+		    dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-176264227-1');
+	    </script>
+</body>
+</html>
